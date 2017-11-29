@@ -1,0 +1,31 @@
+ .container{
+    display: flex;
+    flex-direction: column; 
+    border: 1px solid lightgrey;
+    margin-top:10%;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    color:#484848;
+ }
+
+
+.container>h2{
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    width: 70%;
+    padding: 3%;
+}
+
+.container>h4{
+    margin:0 0 2% 0;
+}
+
+.container>div{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 35%;
+    margin:2% 0 2% 0;
+}

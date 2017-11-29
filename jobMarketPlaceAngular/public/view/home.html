@@ -1,0 +1,35 @@
+<div>   
+    <div class="homeJumbotron">
+         <img src="../images/jumbotron.jpg" alt="logo">
+    </div>
+    <div class="homeContent">
+        <h3> We’re in the business of making developers successful</h3>
+        <content class="homeContentTxt">
+            <p> 
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur quo, possimus delectus unde at quaerat debitis placeat tempore, explicabo suscipit quae rerum rem dolore dicta aspernatur in incidunt. Animi, rem!
+                Architecto quos nam laborum quibusdam quas commodi voluptatem magni quia ad corrupti et molestiae rem, iste distinctio numquam laudantium totam ea perferendis quaerat dolore omnis maiores iure natus repudiandae. Eveniet.
+                Dolores iste, laborum quaerat, obcaecati modi labore temporibus esse laudantium facere provident numquam! Explicabo necessitatibus nam natus beatae, velit delectus, enim ut. Dolorum dignissimos rem, omnis quaerat voluptatem quo repudiandae.
+                Praesentium culpa sapiente est quas quis, eius corporis voluptatum nostrum dignissimos nemo vitae fugiat hic deleniti nihil natus distinctio eum maiores dolorum impedit! Perspiciatis, autem rem veritatis, maxime odit repellat.
+                Repudiandae necessitatibus, voluptate, perspiciatis molestiae exercitationem dolore temporibus aliquam hic soluta suscipit velit obcaecati natus ad, quisquam. Asperiores aut, ratione doloribus! Alias sed obcaecati maiores, maxime laboriosam animi suscipit quisquam!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis deserunt quis, placeat eaque ratione. Ducimus illum qui quae voluptates vero aspernatur, quaerat cumque libero, error porro ipsa earum saepe rem!</span><span>Distinctio omnis officiis quia architecto iusto numquam, nobis excepturi totam ut id sed optio possimus ab voluptatum. Quisquam at, voluptate, nobis voluptas, eveniet aspernatur libero velit quaerat explicabo commodi recusandae?
+            </p>
+        </content>
+    </div>
+    <div class="homeVideo" ng-controller="videoController">
+        <h3>Working in Marketplace</h3>
+        <div class="homeVideoContainer">
+            <div ng-repeat="video in videos">
+                <iframe width="360" height="180" ng-src="{{video.url | trustUrl}}" frameborder="0" allowfullscreen></iframe>
+                <h4>{{video.title}}</h4>
+                <content>
+                    {{video.description}}
+                </content>
+            </div>
+         </div>
+    </div>
+    <div class="homeOpenJobsTxt">
+        <h2>245 open jobs in Marketplace</h2>
+    </div>
+</div>

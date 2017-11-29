@@ -1,0 +1,23 @@
+.itemsList{
+    list-style-type: none;
+    margin-bottom: 0;
+    float: right;
+}
+.itemsList li{
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    top:0;
+}
+
+.itemsList li a{
+    color: #484848;
+    text-decoration: none; 
+}
+.itemsList li a:hover {
+    cursor: pointer;
+    text-decoration: underline; 
+}

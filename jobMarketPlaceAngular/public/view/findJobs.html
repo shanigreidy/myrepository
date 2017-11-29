@@ -1,0 +1,26 @@
+<div ng-controller="findJobsController" ng-init="initSearchData()">
+    <div class="findJobsContainer">
+        <div>
+            <h2>Find Jobs:</h2>
+            <div class="searchJobsFilter">
+                <button ng-click="showTextSearch=true; showOptionsSearch=false">Search by free text</button>  
+                <button ng-click="showOptionsSearch=true; showTextSearch=false">Search by options</button>  
+            </div>
+            <div ng-show="showTextSearch">
+                <input class="findJobsTitle" type="text" placeholder="Search for jobs by title or keyword" ng-model="title">   
+            </div>
+            <div ng-show="showOptionsSearch" class="showSearchByOptions">
+                <h5>Company Name:</h5>
+                <div class="findJobsCompanyName" ng-dropdown-multiselect="" options="allCompanies" selected-model="selectedCompanies"></div>
+                <h5>Skills:</h5>                
+                <div class="findJobsSkills" ng-dropdown-multiselect="" options="allSkills" selected-model="selectedSkills"></div>
+                <button ng-click="onSearchJobs()">
+                    <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="jobsContainer">
+        <job ng-repeat="job in jobs track by $index" job="job"></job>
+    </div>
+</div>

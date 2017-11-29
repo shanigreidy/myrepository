@@ -1,0 +1,18 @@
+<div ng-controller="loginController">
+    <div class="LoginHeaderContainer">
+        <h1>Login Form</h1>
+    </div>
+    <form method="POST" name="loginForm" ng-submit="loginUser(user)" class="loginContainer"> 
+        <div>
+           <input class="loginUserNameInput" type="text" name="userName" ng-model="user.userName" ng-required="true" 
+                  ng-minlength="2" placeholder=" &#61447;  User Name"/>
+        </div>
+        <div>
+            <input class="loginPasswordInput" type="password" name="userPassword" ng-model="user.password" ng-required="true" 
+                   ng-minlength="2" placeholder="&#xf084;  Password"/>
+        </div>
+        <div>
+            <input class="loginSubmitButton" type="submit" value="Login"/>
+        </div>		
+    </form>  
+</div>

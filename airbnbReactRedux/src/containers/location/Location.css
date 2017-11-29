@@ -1,0 +1,23 @@
+.clearfix::after {
+    content:"";
+    display:block;
+    clear:both;
+}
+
+.detailsContainer{
+    margin-left: 10%;
+}
+
+.bookingAndWishListContainer{
+    display: flex;
+    flex-direction: column; 
+    width: 28%; 
+    float: right;
+    margin: 5% 7% 0 50px;   
+}
+
+.line{
+    border-bottom: 1px solid lightgray;
+    width: 60%; 
+    margin-top: 2%;
+}

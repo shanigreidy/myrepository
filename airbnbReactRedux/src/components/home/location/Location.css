@@ -1,0 +1,35 @@
+.location{
+    flex-basis: 20%;
+    text-align: center;
+    border: 1px solid #484848;
+    margin: 0 0 20px 20px;  
+    /*color:#484848;*/
+
+}
+
+.location:hover{
+    cursor:pointer;
+}
+ 
+.location h3, .location img, .location>.price{
+    padding: 5px;  
+
+}
+
+.imgLocation{
+    padding-top: 10px;
+    width:80%;
+    height: 40%;
+}
+.link{
+     text-decoration: none; 
+     color:#484848;
+}
+
+.price,.reviews{
+  padding-top: 10px;
+}
+
+.price:before{
+    content: "$";
+}

@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    flex-direction: column; 
+}
+
+.review{
+    display: flex;
+    flex-flow: row;
+}
+
+.review h2{
+    margin-top:0.4%;
+    margin-right: 2%;
+}
+
+.ratingColor> div{
+    color: #008489;
+
+}
+
+.line{
+    border-bottom: 1px solid lightgray;
+    width: 100%; 
+    margin-top: 2%;
+}

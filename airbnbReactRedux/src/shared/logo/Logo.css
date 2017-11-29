@@ -1,0 +1,15 @@
+.logo{
+    width: 10%;
+    height: 10%;
+    float: left;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+.clearfix::after {
+    content:"";
+    display:block;
+    clear:both;
+}

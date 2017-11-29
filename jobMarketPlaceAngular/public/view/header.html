@@ -1,0 +1,26 @@
+<header class="homeHeader clearfix"> 
+    <a href="/">
+        <img class="headerImg" src="../images/logo.jpg" alt="logo">
+    </a> 
+    <div ng-controller="homeController" class="homeLoginRegister" ng-show="showUserMenu">
+        <a href="#login">Login</a> 
+        &nbsp; | &nbsp;
+        <a href="#register">Register</a>
+    </div> 
+    <div ng-controller="homeController" class='homeLoginRegister dropdown' ng-hide="showUserMenu">
+        {{ userMessage }}
+        &nbsp;&nbsp;&nbsp;&nbsp;   
+        <button class="btn dropdown-toggle userMenuBarBtn" type="button" data-toggle="dropdown">
+        <span class="fa fa-bars"></span></button>
+        <ul class="dropdown-menu userMenuBar">
+            <li class="lineAfter"><a href="#userProfile">edit profile</a></li>
+            <li class="lineAfter"><a href="#userJobs">your jobs</a></li>
+            <li class="lineAfter"><a href="#userAgentJobs">agent jobs</a></li>       
+            <li><a href="/" ng-click="onLogOutUser()">Logout</a></li>       
+        </ul>
+    </div>     
+    <a class="homeSearch" href="#findJobs">
+        <i class="fa fa-search " aria-hidden="true"></i>
+        Find Jobs
+    </a> 
+</header>

@@ -1,0 +1,100 @@
+<div ng-controller="userProfileController" ng-init="initCurrentUser()">
+    <div class="editnHeaderContainer">
+        <h1>Edit Your Profile</h1>
+    </div>
+   <form method="POST" name="registerForm" ng-submit="updateUser(user)" class="registerContainer">
+       <h3 class="personalDetailsHeader">Personal Details:</h3>      
+       <div class="personalDetailsContainer">
+            <div class="personalDetailsNames">
+                <div>First Name:</div>
+                <div>Last Name:</div>
+                <div>User Name:</div>
+                <div>Email Address:</div>
+                <div>Password:</div>
+                <div>Confirm Password:</div>
+            </div>  
+            <div class="personalDetailsParams"> 
+                <div>
+                    <input type="text" name="userFirstName" ng-model="user.personalDetails.firstName" ng-required="true" 
+                                    ng-minlength="2" />
+                </div>
+                <div>
+                    <input type="text" name="userLastName" ng-model="user.personalDetails.lastName" ng-required="true" 
+                                    ng-minlength="2" />
+                </div>
+                <div>
+                    <input type="text" name="userName" ng-model="user.personalDetails.userName" ng-required="true" 
+                                    ng-minlength="2" />
+                </div>
+                <div>
+                    <input type="email" name="userEmail" ng-model="user.personalDetails.email" ng-required="true"/>
+                </div>
+                <div>
+                    <input type="password" name="userPassword" ng-model="user.personalDetails.password" ng-required="true" 
+                            ng-minlength="2" />
+                </div>
+                <div>
+                    <input type="password" name="userConfirmPassword" ng-model="user.personalDetails.confirmPassword" ng-required="true" 
+                            ng-minlength="2" />
+                </div>
+            </div>
+        </div>
+        <h3 class="skillsHeader">Skills:</h3>
+        <div class="skillsContainer">
+            <div class="skillsParams1">
+                 <div>
+                    <input type="checkbox" name="javaScript" value="javaScript" ng-model="user.skills.value1"> javaScript             
+                </div>
+                <div>
+                    <input type="checkbox" name="jQuery" value="jQuery" ng-model="user.skills.value2"> jQuery         
+                </div>
+                <div>
+                    <input type="checkbox" name="angular" value="angular" ng-model="user.skills.value3"> angular
+                </div>
+                <div>
+                    <input type="checkbox" name="react" value="react" ng-model="user.skills.value4"> react
+                </div>
+            </div>
+           <div class="skillsParams2">
+                <div>
+                    <input type="checkbox" name="nodeJs" value="nodeJs" ng-model="user.skills.value5">nodeJs     
+                </div>
+                <div>
+                    <input type="checkbox" name="mySQL" value="mySQL" ng-model="user.skills.value6">mySQL         
+                </div>
+                <div>
+                    <input type="checkbox" name="mongoDB" value="mongoDB" ng-model="user.skills.value7">mongoDB    
+                </div>
+                <div>
+                    <input type="checkbox" name="C#" value="C#" ng-model="user.skills.value8">C#
+                </div>
+            </div>
+        </div>
+        <h3 class="workExperienceHeader">Work Experience:</h3>
+        <div>
+            <textarea class="workExperienceContainer" ng-model="user.personalDetails.workExperience" max="400"></textarea>
+        </div>
+        <h3 class="locationHeader">Location:</h3>
+        <div class="locationContainer">
+            <div class="locationNames">
+                <div>Country:</div>
+                <div>City:</div>
+                <div>Address:</div>
+            </div>
+            <div class="locationParams">
+                <div>
+                    <input type="text" name="userCountry" ng-model="user.location.country"/>
+                </div>
+                <div>
+                    <input type="text" name="userCity" ng-model="user.location.city"/>
+                </div>
+                <div>
+                    <input type="text" name="userAddress" ng-model="user.location.address"/>
+                </div>
+            </div>
+        </div>
+        <div>
+            <input class="registerSubmitButton" type="submit" value="Update"/>
+        </div>	
+</form>  
+</div>

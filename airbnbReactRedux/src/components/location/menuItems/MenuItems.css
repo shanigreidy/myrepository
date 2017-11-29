@@ -1,0 +1,32 @@
+.itemsList{
+    float: left;
+    border-bottom: 1px solid lightgray;
+    padding: 0;
+    width: 60%;
+}
+
+.itemsList li{
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    top:0;
+}
+
+.itemsList li a{
+    color: #008489;
+    text-decoration: none;
+}
+
+.itemsList li a:hover{
+    color: #008489;
+    text-decoration: underline;
+}
+
+.clearfix::after {
+    content:"";
+    display:block;
+    clear:both;
+}

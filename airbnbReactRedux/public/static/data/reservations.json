@@ -1,0 +1,26 @@
+[{
+  "id": 1,
+  "startDate": "8/9/2016",
+  "endDate": "2/13/2017",
+  "guests": 2
+}, {
+  "id": 1,
+  "startDate": "3/16/2017",
+  "endDate": "8/26/2016",
+  "guests": 1
+}, {
+  "id": 2,
+  "startDate": "10/8/2016",
+  "endDate": "12/15/2016",
+  "guests": 4
+}, {
+  "id": 3,
+  "startDate": "10/17/2016",
+  "endDate": "3/25/2017",
+  "guests": 6
+}, {
+  "id": 5,
+  "startDate": "1/22/2017",
+  "endDate": "12/7/2016",
+  "guests": 3
+}]

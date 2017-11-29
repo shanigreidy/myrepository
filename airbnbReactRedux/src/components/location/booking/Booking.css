@@ -1,0 +1,74 @@
+.container{
+    display: flex;
+    flex-flow: column;
+    border: 1px solid lightgrey;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.price {
+    flex-basis: 20%;
+    padding:10px;
+    text-align: center;
+    margin: 0;
+    background-color: rgba(60,63,64,0.9);
+    color: white;
+}
+
+.price:before{
+    content: "$";
+}
+
+.checkInTitle, .checkOutTitle {
+    margin-bottom: 5px;
+    flex-grow:1;
+}
+
+.checkDate, .datePickers{
+    text-align: center;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+.datePickers{
+    margin-left:28px;
+}
+
+.startDate, .endDate{
+    text-align: center;
+    padding: 10px 0;
+    font-size: 15px;
+    width: 140px;
+    flex-grow:1;
+    flex-basis: 20%;
+}
+
+.guestsOptions{
+    text-align: center;
+    margin-left: 30px;
+    padding: 5px 0;
+    background-color: white;
+    font-size: 15px;
+    border-radius: 0 2px 2px 0;
+    width: 83%;
+}
+
+.guestsTitle{
+    margin: 15px 0 5px 30px;
+}
+
+.button{
+    text-align: center;
+    margin: 50px 0 10px 30px;
+    padding: 10px;
+    color: white;
+    background-color: #ff5a5f;
+    font-size: 25px;
+    font-weight: 20px;
+    border-radius: 5px;
+    border: none;
+     width: 78%;
+     text-decoration: none;
+}
+

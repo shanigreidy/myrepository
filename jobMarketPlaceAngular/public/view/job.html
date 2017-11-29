@@ -1,0 +1,16 @@
+<div class="jobContainer">
+    <div class="jobNameAndButtonContainer"> 
+        <h2 class="jobName">{{ $ctrl.job.name }}</h2>
+        <button class="jobButton" ng-click="onChooseJob($ctrl.job.id)">Apply</button>
+    </div>
+    <h4 class="jobCompanyName"> company: {{ $ctrl.job.companyName }}</h4>
+    <div class="jobDescription">
+        <h3>Description:</h3>
+        {{ $ctrl.job.description }}
+    </div>
+    <div>
+        <h4>skills:</h4>
+        <div ng-repeat="skill in $ctrl.job.jobSkills">- {{ skill.skillName }}</div>
+    </div>
+    <div class="line"></div>
+</div>

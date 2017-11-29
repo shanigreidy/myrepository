@@ -1,0 +1,18 @@
+.footer{
+    border-top:1px solid black;
+    bottom: 0;
+    width: 100%;
+   
+}
+
+.footer content{
+    float: right;
+    margin-top: 25px; 
+    margin-right: 80px;
+}
+
+.footer h4{
+    float: left;
+    margin-left: 130px;
+
+}

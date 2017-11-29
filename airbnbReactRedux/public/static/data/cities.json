@@ -1,0 +1,32 @@
+[
+        {
+            "id": 20,
+            "countryid": 10,
+            "name": "Puerto Asís"
+        },
+        {
+            "id": 21,
+            "countryid": 11,
+            "name": "Buenos Aires"
+        },
+        {
+            "id": 22,
+            "countryid": 12,
+            "name": "Taubaté"
+        },
+        {
+            "id": 23,
+            "countryid": 13,
+            "name": "Guadalupe Victoria"
+        },
+        {
+            "id": 24,
+            "countryid": 12,
+            "name": "Rio Claro"
+        },
+        {
+            "id": 25,
+            "countryid": 12,
+            "name": "Iracemápolis"
+        }
+]
