@@ -1,0 +1,25 @@
+<header class="clearfix">
+  <div id="logoHeader">
+    <a href="/">
+      <h1> {{ title }}</h1>
+      <p> {{ subTitle }} </p>
+    </a>
+  </div>
+  <div id="loginHeader">
+    <a href="/login"> 
+      <i class="fa fa-sign-in fa-2x" aria-hidden='true'> Login </i>  
+    </a>
+  </div>
+</header>
+<br><br><br>
+<h3>Create a New Account</h3>
+<form id="registerForm" action="" method="POST">
+    E-mail: <input type="email" id="register_user_email" name="register_user_email"><br>
+    Password: <input type="password" id="register_user_password" name="register_user_password"><br>
+    Confirm Password:<input type="password" id="register_confirm_user_password" name="register_confirm_user_password"><br>
+    <input type="submit" value="Register">
+</form>
+
+<button id="cancelRegister">Cancel</button>
+
+<script src="/javascripts/registerClient.js"></script>

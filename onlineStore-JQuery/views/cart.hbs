@@ -1,0 +1,57 @@
+<header class="clearfix">
+  <div id="logoHeader">
+    <a href="/">
+      <h1> {{ title }}</h1>
+      <p> {{ subTitle }} </p>
+    </a>
+  </div>
+  <div class="displayRedisterAndLogin"> 
+    <div id="registerHeader">
+      <a href="/register"> 
+        <i class="fa fa-registered fa-2x" aria-hidden='true'> Register </i>  
+      </a>
+    </div>
+    <div id="loginHeader">
+      <a href="/login"> 
+        <i class="fa fa-sign-in fa-2x" aria-hidden='true'> Login </i>  
+      </a>
+    </div>
+  </div>
+  <div class="displayLogOut">
+    <div id="logOutHeader">
+      <a href="/logout"> Login
+        <i class="fa fa-sign-out fa-2x" aria-hidden='true'></i>  
+      </a>
+    </div>
+  </div>
+</header>
+<div id="cartContainer">
+    <h3>Cart</h3> 
+        <table id="myTable">
+            <tr name="colsNames">
+                <td></td>
+                <td>Product</td>
+                <td>Qty</td>
+                <td>Price</td>
+                <td>Total</td>
+            </tr>
+        {{#each cartData.products}}
+            <tr>
+                <td class="deleteBtn"><button class='deleteProductBtn'>x</button></td>
+                <td>{{this.name}}</td>
+                <td><input type="number" class ="qtyNumber",type ='number', value= {{this.quantity}} ,id= "{{this.name}}", min="0"></td>
+                <td class="dollar">{{this.price}}</td>
+                <td class="totalProductPrice">{{this.totalProductPrice}}</td>
+            </tr>
+        {{/each}}
+            <tr>
+                <td class="total">Total:</td>
+                <td></td>
+                <td id="count"></td>
+                <td></td>
+                <td id="sumAll">{{cartData.allProductsTotalSum}}</td>
+            </tr>
+        </table>
+</div>
+
+<script src="/javascripts/cartClient.js"></script> 

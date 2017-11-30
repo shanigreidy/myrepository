@@ -1,0 +1,26 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>OnlineBooksCatalog</title>
+</head>
+<body>
+    <div> 
+        <h1>Online Books Catalog:</h1>
+        <br /><br />
+        <i>@Html.ActionLink("Horror", "HorrorOnlineBooks", "Books")</i>
+        <br /><br />
+        <i>@Html.ActionLink("Mystery", "MysteryOnlineBooks", "Books")</i>
+        <br /><br />
+        <i>@Html.ActionLink("Romance", "RomanceOnlineBooks", "Books")</i>
+        <br /><br />
+        <i>@Html.ActionLink("Fiction", "FictionOnlineBooks", "Books")</i>
+    </div>
+</body>
+</html>

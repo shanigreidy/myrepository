@@ -1,0 +1,27 @@
+﻿@model mvcproject.Models.Customer
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>CustomerDetails</title>
+</head>
+<body>
+    <div> 
+        <h3>Your Details:</h3>
+        <br/><br/>
+        <i>First Name:</i>@Model.customerFirstName
+        <br/><br/>
+        <i>Last Name:</i>@Model.customerLastName
+        <br/><br/>
+        <i>Id:</i>@Model.customerId
+        <br/><br/>
+        <i>Password:</i>@Model.customerPassword
+    </div>
+</body>
+</html>

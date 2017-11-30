@@ -1,0 +1,35 @@
+﻿@model  mvcproject.Models.LoginCustomer
+ 
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+</head>
+
+
+
+<body>
+    <div>
+
+        @using (Html.BeginForm("Authenticate", "Login", FormMethod.Post))
+        {
+            <i>Id:</i> @Html.TextBoxFor(model => model.customerId) @Html.ValidationMessageFor(model => model.customerId)
+            <br />
+            <i>Password:</i> @Html.PasswordFor(model => model.customerPassword) @Html.ValidationMessageFor(model => model.customerPassword)
+            <br /><br />
+
+            <input id="Submit1" type="submit" value="Login" />
+        }
+    </div>
+</body>
+</html>

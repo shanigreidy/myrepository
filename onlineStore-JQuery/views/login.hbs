@@ -1,0 +1,24 @@
+<header class="clearfix">
+  <div id="logoHeader">
+    <a href="/">
+      <h1> {{ title }}</h1>
+      <p> {{ subTitle }} </p>
+    </a>
+  </div>
+  <div id="registerHeader">
+    <a href="/register"> 
+      <i class="fa fa-registered fa-2x" aria-hidden='true'> Register </i>  
+    </a>
+  </div>
+</header>
+<br><br><br>
+<h3>Login To Your Account</h3>
+<form id="loginForm" action="" method="POST">
+    E-mail: <input type="email" id="login_user_email" name="login_user_email"><br>
+    Password: <input type="password" id="login_user_password" name="login_user_password"><br>
+    <input type="submit" value="Login">
+</form>
+
+<button id="cancelLogin">Cancel</button>
+
+<script src="/javascripts/loginClient.js"></script>

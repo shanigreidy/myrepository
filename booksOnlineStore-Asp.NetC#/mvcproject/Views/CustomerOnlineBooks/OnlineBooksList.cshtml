@@ -1,0 +1,26 @@
+﻿@model mvcproject.ModelView.OnlineBooksViewModel
+@using mvcproject.Models;
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>CustomerOnlineBooksList</title>
+</head>
+<body>
+     <div> 
+         @foreach (OnlineBook onlineBook in Model.onlineBooks)
+         {
+             <br />
+             <h3>@onlineBook.onlineBookName</h3>
+             <img src="@onlineBook.onlineBookImage" alt="@onlineBook.onlineBookName" height="150" width="150" />
+             <br /><br /><br />
+         }
+    </div>
+</body>
+</html>

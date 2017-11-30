@@ -1,0 +1,132 @@
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\bin\roslyn\csc.exe
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\bin\roslyn\System.Collections.Immutable.dll
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\bin\roslyn\vbc.exe
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\bin\roslyn\VBCSCompiler.exe
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\bin\roslyn\VBCSCompiler.exe.config
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\bin\mvcproject.dll.config
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\bin\mvcproject.dll
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\bin\mvcproject.pdb
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\bin\Antlr3.Runtime.dll
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\bin\Microsoft.Web.Infrastructure.dll
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\bin\Newtonsoft.Json.dll
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\bin\System.Web.Helpers.dll
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\bin\System.Web.Mvc.dll
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\bin\System.Web.Optimization.dll
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\bin\System.Web.Razor.dll
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\bin\System.Web.WebPages.Deployment.dll
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\bin\System.Web.WebPages.dll
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\bin\System.Web.WebPages.Razor.dll
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\bin\WebGrease.dll
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\bin\System.Web.Helpers.xml
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\bin\System.Web.Mvc.xml
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\bin\System.Web.Optimization.xml
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\bin\System.Web.Razor.xml
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\bin\System.Web.WebPages.xml
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\bin\System.Web.WebPages.Deployment.xml
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\bin\System.Web.WebPages.Razor.xml
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\bin\Antlr3.Runtime.pdb
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\bin\Newtonsoft.Json.xml
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\obj\Debug\mvcproject.csprojResolveAssemblyReference.cache
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\obj\Debug\mvcproject.dll
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\obj\Debug\mvcproject.pdb
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\bin\EntityFramework.dll
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\bin\EntityFramework.SqlServer.dll
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\bin\EntityFramework.xml
+c:\users\computers\documents\visual studio 2015\Projects\mvcproject\mvcproject\bin\EntityFramework.SqlServer.xml
+C:\Users\shani\Desktop\mvcproject\mvcproject\bin\roslyn\csc.exe
+C:\Users\shani\Desktop\mvcproject\mvcproject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\shani\Desktop\mvcproject\mvcproject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\shani\Desktop\mvcproject\mvcproject\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\shani\Desktop\mvcproject\mvcproject\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\shani\Desktop\mvcproject\mvcproject\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\shani\Desktop\mvcproject\mvcproject\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\shani\Desktop\mvcproject\mvcproject\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\shani\Desktop\mvcproject\mvcproject\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\shani\Desktop\mvcproject\mvcproject\bin\roslyn\vbc.exe
+C:\Users\shani\Desktop\mvcproject\mvcproject\bin\roslyn\VBCSCompiler.exe
+C:\Users\shani\Desktop\mvcproject\mvcproject\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\shani\Desktop\mvcproject\mvcproject\bin\mvcproject.dll.config
+C:\Users\shani\Desktop\mvcproject\mvcproject\bin\mvcproject.dll
+C:\Users\shani\Desktop\mvcproject\mvcproject\bin\mvcproject.pdb
+C:\Users\shani\Desktop\mvcproject\mvcproject\bin\Antlr3.Runtime.dll
+C:\Users\shani\Desktop\mvcproject\mvcproject\bin\EntityFramework.dll
+C:\Users\shani\Desktop\mvcproject\mvcproject\bin\EntityFramework.SqlServer.dll
+C:\Users\shani\Desktop\mvcproject\mvcproject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\shani\Desktop\mvcproject\mvcproject\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\shani\Desktop\mvcproject\mvcproject\bin\Newtonsoft.Json.dll
+C:\Users\shani\Desktop\mvcproject\mvcproject\bin\System.Web.Helpers.dll
+C:\Users\shani\Desktop\mvcproject\mvcproject\bin\System.Web.Mvc.dll
+C:\Users\shani\Desktop\mvcproject\mvcproject\bin\System.Web.Optimization.dll
+C:\Users\shani\Desktop\mvcproject\mvcproject\bin\System.Web.Razor.dll
+C:\Users\shani\Desktop\mvcproject\mvcproject\bin\System.Web.WebPages.Deployment.dll
+C:\Users\shani\Desktop\mvcproject\mvcproject\bin\System.Web.WebPages.dll
+C:\Users\shani\Desktop\mvcproject\mvcproject\bin\System.Web.WebPages.Razor.dll
+C:\Users\shani\Desktop\mvcproject\mvcproject\bin\WebGrease.dll
+C:\Users\shani\Desktop\mvcproject\mvcproject\bin\EntityFramework.xml
+C:\Users\shani\Desktop\mvcproject\mvcproject\bin\EntityFramework.SqlServer.xml
+C:\Users\shani\Desktop\mvcproject\mvcproject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\shani\Desktop\mvcproject\mvcproject\bin\System.Web.Helpers.xml
+C:\Users\shani\Desktop\mvcproject\mvcproject\bin\System.Web.Mvc.xml
+C:\Users\shani\Desktop\mvcproject\mvcproject\bin\System.Web.Optimization.xml
+C:\Users\shani\Desktop\mvcproject\mvcproject\bin\System.Web.Razor.xml
+C:\Users\shani\Desktop\mvcproject\mvcproject\bin\System.Web.WebPages.xml
+C:\Users\shani\Desktop\mvcproject\mvcproject\bin\System.Web.WebPages.Deployment.xml
+C:\Users\shani\Desktop\mvcproject\mvcproject\bin\System.Web.WebPages.Razor.xml
+C:\Users\shani\Desktop\mvcproject\mvcproject\bin\Antlr3.Runtime.pdb
+C:\Users\shani\Desktop\mvcproject\mvcproject\bin\Newtonsoft.Json.xml
+C:\Users\shani\Desktop\mvcproject\mvcproject\obj\Debug\mvcproject.csprojResolveAssemblyReference.cache
+C:\Users\shani\Desktop\mvcproject\mvcproject\obj\Debug\mvcproject.dll
+C:\Users\shani\Desktop\mvcproject\mvcproject\obj\Debug\mvcproject.pdb
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\bin\roslyn\csc.exe
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\bin\roslyn\vbc.exe
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\bin\roslyn\VBCSCompiler.exe
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\bin\mvcproject.dll.config
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\bin\mvcproject.dll
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\bin\mvcproject.pdb
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\bin\Antlr3.Runtime.dll
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\bin\EntityFramework.dll
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\bin\EntityFramework.SqlServer.dll
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\bin\Newtonsoft.Json.dll
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\bin\System.Web.Helpers.dll
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\bin\System.Web.Mvc.dll
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\bin\System.Web.Optimization.dll
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\bin\System.Web.Razor.dll
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\bin\System.Web.WebPages.Deployment.dll
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\bin\System.Web.WebPages.dll
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\bin\System.Web.WebPages.Razor.dll
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\bin\WebGrease.dll
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\bin\EntityFramework.xml
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\bin\EntityFramework.SqlServer.xml
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\bin\System.Web.Helpers.xml
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\bin\System.Web.Mvc.xml
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\bin\System.Web.Optimization.xml
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\bin\System.Web.Razor.xml
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\bin\System.Web.WebPages.xml
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\bin\System.Web.WebPages.Deployment.xml
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\bin\System.Web.WebPages.Razor.xml
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\bin\Antlr3.Runtime.pdb
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\bin\Newtonsoft.Json.xml
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\obj\Debug\mvcproject.csprojResolveAssemblyReference.cache
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\obj\Debug\mvcproject.dll
+C:\Users\shani\Desktop\ng-lodash-master\mvcproject\mvcproject\obj\Debug\mvcproject.pdb

@@ -1,0 +1,26 @@
+﻿@model mvcproject.Models.Customer
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>CustomerHome</title>
+</head>
+<body>
+    <div> 
+        <h1>Welcome @Model.customerFirstName</h1>
+        <br /><br />         
+        <i>@Html.ActionLink("Book Catalog", "OnlineBooksCatalog", "Books")</i>
+        <br /><br />
+        <i>@Html.ActionLink("Your Details", "PersonalDetails", "Customer",new { customerFirstName = Model.customerFirstName, customerLastName = Model.customerLastName, customerId = Model.customerId, customerPassword = Model.customerPassword},null)</i>
+        <br /><br />
+        <i>@Html.ActionLink("Your Books list", "OnlineBooksList", "CustomerOnlineBooks")</i>
+       
+    </div>
+</body>
+</html>

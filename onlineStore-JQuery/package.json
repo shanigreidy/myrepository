@@ -1,0 +1,31 @@
+{
+  "name": "webstore",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "minify": "uglifyjs public/javascripts/appLogicClient.js -o public/javascripts/appLogicClient.min.js",
+    "lint": "jshint **/*.js"
+  },
+  "dependencies": {
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "express": "~4.15.2",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.3",
+    "grunt": "^1.0.1",
+    "morgan": "~1.8.1",
+    "serve-favicon": "~2.4.2"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "^1.1.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "latest",
+    "gulp-connect": "latest",
+    "gulp-sass": "latest",
+    "gulp-uglify": "latest",
+    "gulp-util": "latest",
+    "jshint": "^2.9.4"
+  }
+}

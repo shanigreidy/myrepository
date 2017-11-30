@@ -1,0 +1,39 @@
+﻿@model mvcproject.Models.Customer
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Register</title>
+
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+</head>
+
+
+
+<body>
+    <div> 
+        
+       @using (Html.BeginForm("Registration", "Register", FormMethod.Post))
+       {           
+            <i>First Name:</i> @Html.TextBoxFor(model => model.customerFirstName) @Html.ValidationMessageFor(model => model.customerFirstName)
+            <br />
+            <i>Last Name:</i> @Html.TextBoxFor(model => model.customerLastName) @Html.ValidationMessageFor(model => model.customerLastName)
+            <br />
+            <i>Id:</i> @Html.TextBoxFor(model => model.customerId) @Html.ValidationMessageFor(model => model.customerId)
+            <br />
+            <i>Password:</i> @Html.PasswordFor(model => model.customerPassword) @Html.ValidationMessageFor(model => model.customerPassword)
+            <br /><br />
+
+            <input id="Submit1" type="submit" value="Register" />
+       }
+    </div>
+</body>
+</html>
