@@ -113,7 +113,7 @@ export class BooksComponent {
         let datePattern = /^\d{2}\/\d{2}\/\d{4}$/;
         let dateArray = date.split("/");
 
-        if(date.match(datePattern) && parseInt(dateArray[2]) <= 2017){
+        if(date.match(datePattern)){
             let newDate = new Date(dateArray[2], dateArray[1] - 1, dateArray[0]);
             if (newDate && (newDate.getMonth() + 1) == dateArray[1]){
                 return true;
