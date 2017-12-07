@@ -1,0 +1,49 @@
+<div class="booksColumsNamesContainer">
+    <span class="title">Title</span>
+    <span class="author">Author</span>
+    <span class="date">Date</span>
+</div>
+<div *ngFor= "let book of books">
+    <div class="booksContainer">
+        <p>{{book.title}}</p>      
+        <p>{{book.author}}</p>      
+        <p>{{book.date}}</p>
+        <i class="glyphicon glyphicon-pencil" (click)='onEditBookButtonClicked(book)' data-toggle="modal" data-target="#bookModal"></i>
+        <i class="glyphicon glyphicon-trash" (click)='onDeleteBook(book.title)'></i>
+    </div>   
+</div>
+<button class="btn btn-primary btn-lg addNewBookButton" (click)='onAddBookButtonClicked()' data-toggle="modal" data-target="#bookModal">Add new book</button>
+<div class="modal fade" id="bookModal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <h3>{{formTitle}}</h3>
+            <form ngNativeValidate (ngSubmit)="functionInvoke == 'add' ? onAddBook() : onSaveEditBook()">
+                <div class="form-group">
+                    <label for="title">Title:</label>
+                    <input type="text" class="form-control" name="title" [(ngModel)]="book.title" placeholder="Title" required 
+                           oninvalid="this.setCustomValidity('Title is required')" oninput="setCustomValidity('')"/>
+                </div>
+                <div class="form-group">
+                    <label for="author">Author:</label>
+                    <input type="text" class="form-control" name="author" [(ngModel)]="book.author" placeholder="Author" required
+                           oninvalid="this.setCustomValidity('Author is required')" oninput="setCustomValidity('')"/>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date:</label>
+                    <input type="text" class="form-control" name="date" [(ngModel)]="book.date" placeholder="DD/MM/YYYY" required
+                           oninvalid="this.setCustomValidity('Date is required')" oninput="setCustomValidity('')"/>
+                </div>
+                <div class="invalidInputMsg">
+                    <div [hidden]="hideTitleIsExistsMsg">Title already exists.</div>
+                    <div [hidden]="hideInvalidDateMsg">Date is invalid. Please use pattern DD/MM/YYYY.</div>
+                    <div [hidden]="hideSuccessMsg">Book {{successMsgAction}} successfully!</div>
+                </div>
+                <div></div>
+                <div class="formButtons">
+                    <button type="submit" class="btn btn-default">{{formAction}}</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" (click)='resetParameters()'>Close</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
