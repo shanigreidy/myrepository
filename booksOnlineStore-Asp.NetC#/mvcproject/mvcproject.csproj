@@ -138,7 +138,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="ModelsDB\CustomerModelDB.cs" />
+    <Compile Include="ModelsDB\CustomerDB.cs" />
     <Compile Include="ModelsDB\CustomerOnlineBooksDB.cs" />
     <Compile Include="ModelsDB\OnlineBooksDB.cs" />
     <Compile Include="Models\CustomerOnlineBook.cs" />
@@ -150,8 +150,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\booksList.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\homePage.css" />
+    <Content Include="Content\registerAndLogin.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />

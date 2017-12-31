@@ -3,14 +3,10 @@
     <span class="author">Author</span>
     <span class="date">Date</span>
 </div>
-<div *ngFor= "let book of books">
-    <div class="booksContainer">
-        <p>{{book.title}}</p>      
-        <p>{{book.author}}</p>      
-        <p>{{book.date}}</p>
-        <i class="glyphicon glyphicon-pencil" (click)='onEditBookButtonClicked(book)' data-toggle="modal" data-target="#bookModal"></i>
-        <i class="glyphicon glyphicon-trash" (click)='onDeleteBook(book.title)'></i>
-    </div>   
+<div class="booksContainer">
+    <div *ngFor= "let book of books">
+        <book [book]= 'book' (bookEdit)='onEditBookButtonClicked($event)' (bookDelete)='onDeleteBook($event)' ></book>
+    </div>
 </div>
 <button class="btn btn-primary btn-lg addNewBookButton" (click)='onAddBookButtonClicked()' data-toggle="modal" data-target="#bookModal">Add new book</button>
 <div class="modal fade" id="bookModal" role="dialog">

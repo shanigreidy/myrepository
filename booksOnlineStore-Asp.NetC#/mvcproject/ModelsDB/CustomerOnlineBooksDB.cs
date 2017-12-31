@@ -19,8 +19,11 @@ namespace mvcproject.ModelsDB
             }
             else
             {
-                dal.customerOnlineBooks.Add(customerOnlineBook);
-                dal.SaveChanges();
+                using (var newDal = new DBdal())
+                {
+                    newDal.customerOnlineBooks.Add(customerOnlineBook);
+                    newDal.SaveChanges();
+                }           
             }
         }
 

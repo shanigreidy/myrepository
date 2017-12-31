@@ -18,7 +18,7 @@ namespace mvcproject.Controllers
 
         public ActionResult Registration(Customer customer)
         {
-            CustomerModelDB customerModelDB = new CustomerModelDB();
+            CustomerDB customerModelDB = new CustomerDB();
             List<Customer> customers = customerModelDB.getCustomersByMatchId(customer.customerId);
 
             if (customers.Count > 0)

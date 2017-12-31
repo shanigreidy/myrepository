@@ -10,30 +10,30 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Register</title>
-
+    <link href="~/Content/registerAndLogin.css" rel="stylesheet" />
     <script src="~/Scripts/jquery-1.10.2.js"></script>
     <script src="~/Scripts/jquery.validate.js"></script>
     <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
 </head>
-
-
-
 <body>
-    <div> 
-        
-       @using (Html.BeginForm("Registration", "Register", FormMethod.Post))
-       {           
-            <i>First Name:</i> @Html.TextBoxFor(model => model.customerFirstName) @Html.ValidationMessageFor(model => model.customerFirstName)
-            <br />
-            <i>Last Name:</i> @Html.TextBoxFor(model => model.customerLastName) @Html.ValidationMessageFor(model => model.customerLastName)
-            <br />
-            <i>Id:</i> @Html.TextBoxFor(model => model.customerId) @Html.ValidationMessageFor(model => model.customerId)
-            <br />
-            <i>Password:</i> @Html.PasswordFor(model => model.customerPassword) @Html.ValidationMessageFor(model => model.customerPassword)
-            <br /><br />
-
-            <input id="Submit1" type="submit" value="Register" />
-       }
-    </div>
+    <h1>Register:</h1>     
+    @using (Html.BeginForm("Registration", "Register", FormMethod.Post))
+    {
+        <div class="container">
+            <div>
+                <p>First Name:</p>
+                <p>Last Name:</p>
+                <p>User Id:</p>
+                <p>Password:</p>
+            </div>
+            <div class="inputTextContainer">
+                <p>@Html.TextBoxFor(model => model.customerFirstName) <i>@Html.ValidationMessageFor(model => model.customerFirstName)</i></p> 
+                <p>@Html.TextBoxFor(model => model.customerLastName) <i>@Html.ValidationMessageFor(model => model.customerLastName)</i></p>
+                <p>@Html.TextBoxFor(model => model.customerId) <i>@Html.ValidationMessageFor(model => model.customerId)</i></p>
+                <p>@Html.PasswordFor(model => model.customerPassword)<i>@Html.ValidationMessageFor(model => model.customerPassword)</i></p>
+            </div>
+        </div>
+        <input class="submitBtn" type="submit" id="Submit1" value="Submit" />
+    }
 </body>
 </html>

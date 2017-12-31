@@ -8,8 +8,8 @@ namespace mvcproject.Models
 {
     public class LoginCustomer
     {
-        [Required(ErrorMessage = "Id is required")]
-        [RegularExpression("^[0-9]{9}$", ErrorMessage = "Id must be 9 numbers")]
+        [Required(ErrorMessage = "User Id is required")]
+        [RegularExpression("^[0-9]{9}$", ErrorMessage = "User Id must be 9 numbers")]
         public string customerId { get; set; }
 
         [Required(ErrorMessage = "Password is required")]

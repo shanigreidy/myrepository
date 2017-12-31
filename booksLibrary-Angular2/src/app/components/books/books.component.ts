@@ -1,17 +1,18 @@
 import {Component} from '@angular/core';
-import {BooksService} from '../services/books.service';
-import { CapitalizePipe } from '../pipes/capitalize.pipe';
-import {Book} from '../book/bookClass';
+import {BooksService} from '../../services/books.service';
+import { CapitalizePipe } from '../../pipes/capitalize.pipe';
+import {BookClass} from '../../classes/book/bookClass';
+import {BookInterface} from '../../interfaces/book/bookInterface';
 
 @Component({
     selector: 'books',
-    templateUrl: 'app/books/books.component.html',
-    styleUrls: ['app/books/books.component.css'],
+    templateUrl: 'app/components/books/books.component.html',
+    styleUrls: ['app/components/books/books.component.css'],
     providers: [BooksService, CapitalizePipe]
 })
 export class BooksComponent {
-    books: book[];
-    book: book = new Book('','','');
+    books: BookInterface[];
+    book: BookInterface = new BookClass('','','');
     hideTitleIsExistsMsg: boolean = true;
     hideInvalidDateMsg: boolean = true;
     editBookTitle: string;
@@ -32,18 +33,19 @@ export class BooksComponent {
     }
 
     onAddBook(){
-        this.book.title = this.capitalizePipe.transform(this.book.title);
+        this.book.title = this.capitalizePipe.transform(this.book.title.toLocaleLowerCase());
+
         if(this.isValidInput(this.book.title,this.book.author,this.book.date, "addBook")){
             this.onSuccessAddOrEditBook("addBook");
             this.hideTitleIsExistsMsg = true;
             this.hideInvalidDateMsg = true;
-            let newBook = new Book(this.book.title,this.book.author,this.book.date);
+            let newBook = new BookClass(this.book.title,this.book.author,this.book.date);
             this.books.push(newBook); 
             this.resetParameters(); 
         }      
     }
 
-    onEditBookButtonClicked(book:Book){
+    onEditBookButtonClicked(book:BookInterface){
         this.formTitle = 'Edit Book';
         this.functionInvoke = 'edit';
         this.formAction = 'Save';
@@ -142,10 +144,4 @@ export class BooksComponent {
         this.book.author = '';       
         this.book.date = '';          
     }
-}
-
-interface book{
-    title: string;
-    author: string;
-    date: string;
 }

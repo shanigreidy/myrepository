@@ -1,0 +1,27 @@
+.bookContainer{
+    display: flex;
+    flex-flow: row;
+    margin-left: 20%;
+}
+
+.bookContainer i{
+    margin: 1.5% 1% 0 0;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.glyphicon-pencil, .glyphicon-trash{
+    color: #4f4a4a;   
+}
+
+
+.bookContainer p{
+    border-radius: 4px;
+    margin: 1% 1% 0 0;
+    border: 1px solid lightgray;
+    padding: 0.5% 1%;
+    text-align: center;
+    font-size: 1.5em;
+    min-width: 23%;
+}
+

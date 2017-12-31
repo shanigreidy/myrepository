@@ -9,18 +9,15 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/homePage.css" rel="stylesheet" />
     <title>CustomerHome</title>
 </head>
 <body>
-    <div> 
-        <h1>Welcome @Model.customerFirstName</h1>
-        <br /><br />         
-        <i>@Html.ActionLink("Book Catalog", "OnlineBooksCatalog", "Books")</i>
-        <br /><br />
-        <i>@Html.ActionLink("Your Details", "PersonalDetails", "Customer",new { customerFirstName = Model.customerFirstName, customerLastName = Model.customerLastName, customerId = Model.customerId, customerPassword = Model.customerPassword},null)</i>
-        <br /><br />
-        <i>@Html.ActionLink("Your Books list", "OnlineBooksList", "CustomerOnlineBooks")</i>
-       
+    <h1>Welcome @Model.customerFirstName</h1>       
+    <div class="container"> 
+        <p>@Html.ActionLink("Book Catalog", "OnlineBooksCatalog", "Books")</p>
+        <p>@Html.ActionLink("Your Details", "PersonalDetails", "Customer",new { customerFirstName = Model.customerFirstName, customerLastName = Model.customerLastName, customerId = Model.customerId, customerPassword = Model.customerPassword},null)</p>
+        <p>@Html.ActionLink("Your Books list", "OnlineBooksList", "CustomerOnlineBooks")</p>     
     </div>
 </body>
 </html>

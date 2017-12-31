@@ -1,0 +1,19 @@
+﻿h1 {
+    margin-top: 3%;
+    color: mediumblue;
+    font-family: David;
+    font-size: 4em;
+     text-align:center;
+}
+
+.container{
+   display: flex;
+   flex-flow: column;
+   text-align:center;
+}
+
+.container p{
+    font-size: 2em;
+    margin-top: 0.5%;
+}
+

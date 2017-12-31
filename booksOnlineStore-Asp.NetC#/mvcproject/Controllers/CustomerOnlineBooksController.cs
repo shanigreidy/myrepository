@@ -22,7 +22,6 @@ namespace mvcproject.Controllers
             customerOnlineBook.onlineBookId = onlineBookId;
 
             customerOnlineBooksDB.AddOnlineBook(customerOnlineBook);
-            customerOnlineBook = null;
 
             return RedirectToAction(categoryName+"OnlineBooks", "Books");
         }

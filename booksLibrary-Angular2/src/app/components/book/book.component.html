@@ -1,0 +1,7 @@
+<div class="bookContainer">
+    <p>{{book.title}}</p>      
+    <p>{{book.author}}</p>      
+    <p>{{book.date}}</p>
+    <i class="glyphicon glyphicon-pencil" (click)='onEditBookButtonClicked(book)' data-toggle="modal" data-target="#bookModal"></i>
+    <i class="glyphicon glyphicon-trash" (click)='onDeleteBook(book.title)'></i>  
+</div>

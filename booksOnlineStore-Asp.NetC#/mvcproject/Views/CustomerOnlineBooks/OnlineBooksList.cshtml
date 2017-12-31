@@ -10,17 +10,19 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/booksList.css" rel="stylesheet" />
     <title>CustomerOnlineBooksList</title>
 </head>
 <body>
-     <div> 
+    <h1>Your Books List:</h1>
+     <div class="booksListContainer"> 
          @foreach (OnlineBook onlineBook in Model.onlineBooks)
          {
-             <br />
-             <h3>@onlineBook.onlineBookName</h3>
-             <img src="@onlineBook.onlineBookImage" alt="@onlineBook.onlineBookName" height="150" width="150" />
-             <br /><br /><br />
+            <div class="bookContainer">
+                <h2>@onlineBook.onlineBookName</h2>
+                <img class="bookImg" src="@onlineBook.onlineBookImage" alt="@onlineBook.onlineBookName" />
+            </div>
          }
-    </div>
+     </div>
 </body>
 </html>

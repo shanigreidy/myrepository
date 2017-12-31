@@ -9,14 +9,13 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Home</title>
+    <link href="~/Content/homePage.css" rel="stylesheet" />
 </head>
 <body>
-    <div> 
-        <h1>Welcome to my online library</h1>
-        <br /><br />
-        <i>@Html.ActionLink("Register", "Register")</i>
-        <br/><br/>
-        <i>@Html.ActionLink("Login", "Login")</i>
+    <h1>Online Books Library</h1>
+    <div class="container"> 
+        <p>@Html.ActionLink("Register", "Register")</p>
+        <p>@Html.ActionLink("Login", "Login")</p>
     </div>
 </body>
 </html>

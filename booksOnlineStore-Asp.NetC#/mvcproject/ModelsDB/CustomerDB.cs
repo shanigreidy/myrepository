@@ -7,7 +7,7 @@ using mvcproject.Models;
 
 namespace mvcproject.ModelsDB
 {
-    public class CustomerModelDB
+    public class CustomerDB
     {
         private DBdal dal = new DBdal();
         public List<Customer> getCustomersByMatchId(string customerId)

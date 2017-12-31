@@ -1,35 +1,30 @@
 ﻿@model mvcproject.ModelView.OnlineBooksViewModel
     @using mvcproject.Models;
 
-
 @{
     Layout = null;
 }
 
 <!DOCTYPE html>
-
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/booksList.css" rel="stylesheet" />
     <title>@ViewData["Category"] Online Books</title>
 </head>
 <body>
     <div> 
-        <h2>@ViewData["Category"] Online Books List:</h2>
-
-        <br /> <br />
-       @foreach (OnlineBook book in Model.onlineBooks)
-        {
-            <br />
-            <h3>@book.onlineBookName</h3>
-            <input style="float:right; margin-right:1000px;" id="@book.onlineBookId" type="submit" value="Read me" onclick="location.href='@Url.Action("AddOnlineBook", "CustomerOnlineBooks",new {onlineBookId = @book.onlineBookId, categoryName = @ViewData["Category"]})'"/>
-            <img src="@book.onlineBookImage" alt="@book.onlineBookName" height="150" width="150"/>
-            <br /><br /><br />
-        }
-
-        <script>
-
-        </script>
+       <h1>@ViewData["Category"] Online Books List:</h1>
+        <div class="booksListContainer">
+            @foreach (OnlineBook book in Model.onlineBooks)
+            {
+                <div class="bookContainer">
+                    <h2>@book.onlineBookName</h2>
+                    <img class="bookImg" src="@book.onlineBookImage" alt="@book.onlineBookName" />
+                    <input class="addBookBtn" id="@book.onlineBookId" type="submit" value="Read me" onclick="location.href='@Url.Action("AddOnlineBook", "CustomerOnlineBooks",new {onlineBookId = @book.onlineBookId, categoryName = @ViewData["Category"]})'" />
+                </div>
+            }
+        </div>
     </div>
 </body>
 </html>

@@ -19,7 +19,7 @@ namespace mvcproject.Controllers
 
         public ActionResult Authenticate(LoginCustomer loginCustomer)
         {
-            CustomerModelDB customerModelDB = new CustomerModelDB();
+            CustomerDB customerModelDB = new CustomerDB();
             List<Customer> customers = customerModelDB.getCustomersByMatchIdAndPassword(loginCustomer);
 
             if (customers.Count > 0)
