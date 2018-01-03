@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
-import {BookInterface} from '../../interfaces/book/bookInterface';
+import {BookClass} from '../../classes/book/bookClass';
 
 @Component({
     selector: 'book',
@@ -7,15 +7,15 @@ import {BookInterface} from '../../interfaces/book/bookInterface';
     styleUrls: ['app/components/book/book.component.css'],
 })
 export class BookComponent {
-    @Input() book: BookInterface;
-    @Output() bookEdit: EventEmitter<BookInterface> = new EventEmitter<BookInterface>();
+    @Input()  book: BookClass;
+    @Output() bookEdit: EventEmitter<BookClass> = new EventEmitter<BookClass>();
     @Output() bookDelete: EventEmitter<string> = new EventEmitter<string>();
    
-    onEditBookButtonClicked(book:BookInterface){
+    onEditBookButtonClicked(book:BookClass):void{
         this.bookEdit.emit(book);
     }
 
-    onDeleteBook(bookTitle:string){
+    onDeleteBook(bookTitle:string):void{
         this.bookDelete.emit(bookTitle);
     }
 }

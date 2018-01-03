@@ -1,8 +1,9 @@
 import {Component} from '@angular/core';
 import {BooksService} from '../../services/books.service';
-import { CapitalizePipe } from '../../pipes/capitalize.pipe';
+import {CapitalizePipe} from '../../pipes/capitalize.pipe';
 import {BookClass} from '../../classes/book/bookClass';
-import {BookInterface} from '../../interfaces/book/bookInterface';
+
+declare var jQuery:any;
 
 @Component({
     selector: 'books',
@@ -11,8 +12,8 @@ import {BookInterface} from '../../interfaces/book/bookInterface';
     providers: [BooksService, CapitalizePipe]
 })
 export class BooksComponent {
-    books: BookInterface[];
-    book: BookInterface = new BookClass('','','');
+    books: BookClass[];
+    book: BookClass = new BookClass('','','');
     hideTitleIsExistsMsg: boolean = true;
     hideInvalidDateMsg: boolean = true;
     editBookTitle: string;
@@ -22,45 +23,43 @@ export class BooksComponent {
     hideSuccessMsg: boolean = true;
     successMsgAction: string;
 
-    constructor(private booksService: BooksService, private capitalizePipe: CapitalizePipe){
+    constructor(private booksService:BooksService, private capitalizePipe:CapitalizePipe){
          booksService.getBooks().subscribe(books => this.books = books);  
     }
 
-    onAddBookButtonClicked(){
+    onAddBookButtonClicked():void{
         this.formTitle = 'Add new Book';
         this.functionInvoke = 'add';
         this.formAction = 'Add';
     }
 
-    onAddBook(){
+    onAddBook():void{
         this.book.title = this.capitalizePipe.transform(this.book.title.toLocaleLowerCase());
 
-        if(this.isValidInput(this.book.title,this.book.author,this.book.date, "addBook")){
+        if(this.isValidInput(this.book.title, this.book.author, this.book.date, "addBook")){
             this.onSuccessAddOrEditBook("addBook");
-            this.hideTitleIsExistsMsg = true;
-            this.hideInvalidDateMsg = true;
-            let newBook = new BookClass(this.book.title,this.book.author,this.book.date);
+            let newBook = new BookClass(this.book.title, this.book.author, this.book.date);
             this.books.push(newBook); 
             this.resetParameters(); 
         }      
     }
 
-    onEditBookButtonClicked(book:BookInterface){
+    onEditBookButtonClicked(book:BookClass):void{
         this.formTitle = 'Edit Book';
         this.functionInvoke = 'edit';
         this.formAction = 'Save';
-        this.editBookTitle= book.title;
+        this.editBookTitle = book.title;
         this.book.title = book.title;
         this.book.author = book.author;
         this.book.date = book.date;
     }
 
-    onSaveEditBook(){
-        this.book.title = this.capitalizePipe.transform(this.book.title);        
-        if(this.isValidInput(this.book.title,this.book.author,this.book.date, "editBook")){
+    onSaveEditBook():void{
+        this.book.title = this.capitalizePipe.transform(this.book.title);    
+
+        if(this.isValidInput(this.book.title, this.book.author, this.book.date, "editBook")){
             this.onSuccessAddOrEditBook("editBook");            
-            this.hideTitleIsExistsMsg = true;
-            this.hideInvalidDateMsg = true;
+
             for(let index in this.books){
                 if(this.books[index].title == this.editBookTitle){
                     this.books[index].title = this.book.title;
@@ -68,16 +67,18 @@ export class BooksComponent {
                     this.books[index].date = this.book.date;
                 }
             }
+            
+            this.resetParameters();             
         }  
     }
 
-    onDeleteBook(title:string){
+    onDeleteBook(title:string):void{
         if (confirm("Are you sure you want to delete this book?") == true) {
             this.books = this.books.filter(book => book.title !== title);
         } 
     }
    
-    isValidInput(title:string ,author:string, date:string,action:string):boolean{
+    isValidInput(title:string , author:string, date:string, action:string):boolean{
         if(this.isTitleExists(this.book.title, action)){
             this.hideTitleIsExistsMsg = false;
             this.hideInvalidDateMsg = true;  
@@ -125,9 +126,12 @@ export class BooksComponent {
         return false;
     }
 
-    onSuccessAddOrEditBook(action:string){
+    onSuccessAddOrEditBook(action:string):void{
         this.hideSuccessMsg = false;
-        setTimeout(() => this.hideSuccessMsg = true, 2000);
+        setTimeout(() => {
+                            this.hideSuccessMsg = true;
+                            jQuery("#bookModal").modal("hide");
+                         }, 1000);
 
         if(action == "addBook"){
             this.successMsgAction = "added";
@@ -137,11 +141,11 @@ export class BooksComponent {
         }
     }
 
-    resetParameters(){
+    resetParameters():void{
         this.hideTitleIsExistsMsg = true;
         this.hideInvalidDateMsg = true;
         this.book.title = '';       
         this.book.author = '';       
-        this.book.date = '';          
+        this.book.date ='';          
     }
 }
